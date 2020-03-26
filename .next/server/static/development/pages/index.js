@@ -88,10 +88,73 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
+var _jsxFileName = "C:\\Users\\Kyle\\Documents\\code_projects\\tutorials2020\\bitsprice\\components\\Layout.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Layout = props => __jsx("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 3
+  }
+}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 5
+  }
+}, __jsx("title", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 7
+  }
+}, "BitsPrice"), __jsx("link", {
+  rel: "stylesheet",
+  href: "https://bootswatch.com/4/cerulean/bootstrap.min.css",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 7
+  }
+})), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12,
+    columnNumber: 5
+  }
+}), props.children);
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
 
 /***/ "./components/Navbar.js":
 /*!******************************!*\
@@ -111,58 +174,65 @@ var _jsxFileName = "C:\\Users\\Kyle\\Documents\\code_projects\\tutorials2020\\bi
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Navbar = () => __jsx("ul", {
+const Navbar = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4,
     columnNumber: 3
   }
-}, __jsx("li", {
+}, __jsx("ul", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5,
     columnNumber: 5
   }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
+}, __jsx("li", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6,
     columnNumber: 7
   }
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 9
+  }
 }, __jsx("a", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 22
+    lineNumber: 7,
+    columnNumber: 24
   }
 }, "Home"))), __jsx("li", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 5
+    lineNumber: 9,
+    columnNumber: 7
   }
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/about",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 7
+    lineNumber: 10,
+    columnNumber: 9
   }
 }, __jsx("a", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 27
+    lineNumber: 10,
+    columnNumber: 29
   }
-}, "About"))));
+}, "About")))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
 
@@ -1854,40 +1924,40 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navbar */ "./components/Navbar.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 var _jsxFileName = "C:\\Users\\Kyle\\Documents\\code_projects\\tutorials2020\\bitsprice\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Index = () => __jsx("div", {
+const Index = () => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4,
     columnNumber: 3
   }
-}, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5,
     columnNumber: 5
   }
-}), __jsx("h1", {
+}, __jsx("h1", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6,
-    columnNumber: 5
+    columnNumber: 7
   }
-}, "Welcome to BitsPrice"));
+}, "Welcome to BitsPrice")));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -1896,6 +1966,17 @@ const Index = () => __jsx("div", {
 
 module.exports = __webpack_require__(/*! C:\Users\Kyle\Documents\code_projects\tutorials2020\bitsprice\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 
